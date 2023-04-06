@@ -1,5 +1,6 @@
 import './App.css';
 import Lessons from './components/Lessons/Lessons';
+import Lessons_changer from './components/lessons_changer/Lessons_changer';
 
 
 function App() {

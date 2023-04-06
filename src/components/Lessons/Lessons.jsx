@@ -74,16 +74,19 @@ const Lessons = (props) => {
             {isSplit: true, one_group_name: "Англ", two_group_name: "Англ",one_group_office:"421",two_group_office:"421", time: "14:55-15:40"},
         ],
         Saturday_data: [
-            {name: "Дискретная математика", office: "204", time: "8:30-9:15"},
-            {name: "Дискретная математика", office: "204", time: "9:15-10:05"},
-            {name: "Дискретная математика", office: "204", time: "10:10-10:55"},
-            {name: "Дискретная математика", office: "204", time: "11:00-11:45"},
+            {name: "Дискретная математика", office: "", time: "8:30-9:15"},
+            {name: "Дискретная математика", office: "", time: "9:15-10:05"},
+            {name: "Дискретная математика", office: "", time: "10:10-10:55"},
+            {name: "Дискретная математика", office: "", time: "11:00-11:45"},
             {name: "обед", office: "хз", time: "11:45-12:25"},
             {isSplit: true, one_group_name: "мдк02", two_group_name: "мдк02",one_group_office:"",two_group_office:"", time: "12:25-13:10"},
             {isSplit: true, one_group_name: "мдк02", two_group_name: "мдк02",one_group_office:"",two_group_office:"", time: "13:15-14:00"},
             {isSplit: true, one_group_name: "мдк02", two_group_name: "мдк02",one_group_office:"",two_group_office:"", time: "14:05-14:50"},
             {isSplit: true, one_group_name: "мдк02", two_group_name: "мдк02",one_group_office:"",two_group_office:"", time: "14:55-15:40"},
         ],
+        voscr_data: [
+            {name: "а отдыхать кто будет?", office: "😀", time: "😴"},
+        ]
     }
 
     let [week_day_lessons, setWeek_day_lessons] = useState(lessons_data.monday_data)
@@ -98,6 +101,7 @@ const Lessons = (props) => {
                 <button href="" onClick={() => {setWeek_day_lessons(lessons_data.Thursday_data); setWeek_day("Четверг")}}>Чт</button>
                 <button href="" onClick={() => {setWeek_day_lessons(lessons_data.Friday_data); setWeek_day("Пятница")}}>Пт</button>
                 <button href="" onClick={() => {setWeek_day_lessons(lessons_data.Saturday_data); setWeek_day("Суббота")}}>Сб</button>
+                <button href="" onClick={() => {setWeek_day_lessons(lessons_data.voscr_data); setWeek_day("Воскресенье")}}>Вс</button>
             </div>
             <Lessons_list week_day_lessonss={week_day_lessons} week_day={week_day}/>
         </div>
