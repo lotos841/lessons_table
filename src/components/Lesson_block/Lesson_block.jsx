@@ -33,9 +33,6 @@ const Lesson_block = (props) => {
             </div>
         )
     }
-
-
-
 }
 
 export default Lesson_block
