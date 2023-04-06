@@ -87,18 +87,19 @@ const Lessons = (props) => {
     }
 
     let [week_day_lessons, setWeek_day_lessons] = useState(lessons_data.monday_data)
+    let [week_day, setWeek_day] = useState("Понедельник")
 
     return (
         <div className={classes.lessons}>
             <div className={classes.navbar}>
-                <button href="" onClick={() => {setWeek_day_lessons(lessons_data.monday_data)}}>Пн</button>
-                <button href="" onClick={() => {setWeek_day_lessons(lessons_data.tuesday_data)}}>Вт</button>
-                <button href="" onClick={() => {setWeek_day_lessons(lessons_data.wednesday_data)}}>Ср</button>
-                <button href="" onClick={() => {setWeek_day_lessons(lessons_data.Thursday_data)}}>Чт</button>
-                <button href="" onClick={() => {setWeek_day_lessons(lessons_data.Friday_data)}}>Пт</button>
-                <button href="" onClick={() => {setWeek_day_lessons(lessons_data.Saturday_data)}}>Сб</button>
+                <button href="" onClick={() => {setWeek_day_lessons(lessons_data.monday_data); setWeek_day("Понедельник")}}>Пн</button>
+                <button href="" onClick={() => {setWeek_day_lessons(lessons_data.tuesday_data); setWeek_day("Вторник")}}>Вт</button>
+                <button href="" onClick={() => {setWeek_day_lessons(lessons_data.wednesday_data); setWeek_day("Среда")}}>Ср</button>
+                <button href="" onClick={() => {setWeek_day_lessons(lessons_data.Thursday_data); setWeek_day("Четверг")}}>Чт</button>
+                <button href="" onClick={() => {setWeek_day_lessons(lessons_data.Friday_data); setWeek_day("Пятница")}}>Пт</button>
+                <button href="" onClick={() => {setWeek_day_lessons(lessons_data.Saturday_data); setWeek_day("Суббота")}}>Сб</button>
             </div>
-            <Lessons_list week_day_lessonss={week_day_lessons}/>
+            <Lessons_list week_day_lessonss={week_day_lessons} week_day={week_day}/>
         </div>
     )
 }

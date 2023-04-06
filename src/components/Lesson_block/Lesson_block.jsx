@@ -11,6 +11,8 @@ const Lesson_block = (props) => {
                         <h2 className={classes.lesson_name}>{props.one_group_lesson_name} </h2>
                         <h2 className={classes.lesson_office}>{props.one_group_office}</h2>
                     </div>
+                    <h3 className={classes.group_title1}>1</h3>
+                    <h3 className={classes.group_title2}>2</h3>
                     <div className={classes.group_block}>
                         <h2 className={classes.lesson_name}>{props.two_group_lesson_name}</h2>
                         <h2 className={classes.lesson_office}>{props.two_group_office}</h2>
