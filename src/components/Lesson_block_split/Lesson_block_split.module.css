@@ -1,0 +1,98 @@
+.lesson_block_split {
+    color: rgb(255, 255, 255);
+    background-color: var(--block-bg-color);
+    padding: 5px;
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.lesson_names_blocks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+
+.lesson_block {
+    align-items: center;
+    border-left: 4px solid white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.lesson_time {
+    font-size: 16px;
+    text-align: center;
+    padding-right: 5px;
+}
+
+.lesson_name {
+    text-align: center;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.lesson_office {
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 2px;
+    font-size: 20px;
+}
+
+@media (max-width: 500px) {
+    .lesson_time {
+        font-size: 12px;
+        padding-right: 0px;
+        border-right: none;
+
+    }
+    .lesson_name {
+        font-size: 14px;
+    }
+    
+    .lesson_office {
+        font-size: 10px;
+        padding: 2px;
+    }
+
+    .lesson_block {
+        border-left: 2px solid white;
+    }
+}
+
+@media (max-width: 400px) {
+    .lesson_time {
+        font-size: 12px;
+        padding-right: 0px;
+        border-right: none;
+    }
+    .lesson_name {
+        font-size: 12px;
+    }
+    
+    .lesson_office {
+        border: 2px solid rgb(255, 255, 255);
+        font-size: 10px;
+    }
+}
+
+
+@media (max-width: 300px) {
+    .lesson_time {
+        font-size: 10px;
+        padding-right: 0px;
+        border-right: none;
+    }
+    .lesson_name {
+        font-size: 10px;
+    }
+    
+    .lesson_office {
+        border: 2px solid rgb(255, 255, 255);
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,146 @@
+.lesson_block {
+    display: grid;
+    grid-template-columns: 15% 80%;
+    gap: 10px;
+    align-items: center;
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.lesson_info {
+    background-color: var(--block-bg-color);
+    display: flex;
+    justify-content: space-between;
+    border: 4px solid white;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0px 15px;
+}
+
+.lesson_time {
+    padding: 1px;
+    border: 4px solid white;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.lesson_office {
+    border: 4px solid white;
+    border-radius: 10px;
+    padding: 2px;
+    max-width: 50px;
+}
+
+.lesson_name {
+    font-size: 20px;
+}
+
+
+
+.lesson_block_split {
+    margin-top: 20px;
+    background-color: var(--block-bg-color);
+    border: 4px solid white;
+    border-radius: 10px;
+    padding: 0px 15px;
+    text-align: center;
+    align-items: center;
+    color:white;
+    display: grid;
+    grid-template-columns: 15% 90%
+}
+
+.lesson_time_split{
+    border: 4px solid white;
+    border-radius: 10px;
+    font-size: 16px;
+
+}
+
+.lesson_groups_blocks {
+    
+}
+
+.group_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 4px solid white;
+    margin: 10px;
+    padding: 0px 10px;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 500px) {
+    .lesson_name {
+        font-size: 16px;
+    }
+
+    .lesson_office {
+        border: 4px solid white;
+        border-radius: 10px;
+        font-size: 16px;
+        padding: 2px;
+    }
+    .lesson_time {
+        padding: 1px;
+        border: 4px solid white;
+        border-radius: 10px;
+        font-size: 12px;
+    }
+
+    .lesson_time_split{
+        border: 4px solid white;
+        border-radius: 10px;
+        font-size: 12px;
+    
+    }
+}
+
+@media (max-width: 340px) {
+    .lesson_name {
+        font-size: 14px;
+    }
+
+    .lesson_office {
+        border: 4px solid white;
+        border-radius: 10px;
+        font-size: 12px;
+        padding: 2px;
+    }
+    .lesson_time {
+        padding: 1px;
+        border: 4px solid white;
+        border-radius: 10px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 300px) {
+    .lesson_name {
+        font-size: 14px;
+    }
+
+    .lesson_time_split {
+        padding: 1px;
+        border: 4px solid white;
+        border-radius: 10px;
+        font-size: 10px;
+    }
+
+    .lesson_time {
+        padding: 1px;
+        border: 4px solid white;
+        border-radius: 10px;
+        font-size: 10px;
+    }
+
+    .lesson_office {
+        border: 4px solid white;
+        border-radius: 10px;
+        font-size: 12px;
+        padding: 2px;
+    }
+}

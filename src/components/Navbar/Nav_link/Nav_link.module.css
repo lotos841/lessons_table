@@ -1,0 +1,8 @@
+.nav_link {
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.nav_link:hover {
+    color: var(--hover-color)
+}
