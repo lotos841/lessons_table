@@ -1,8 +1,9 @@
 :root {
   --main-bg-color: rgb(41, 41, 41);
   --block-bg-color: rgb(120, 120, 120);
-  --hover-color: rgb(3, 253, 253);
   --text-color: rgb(255, 255, 255);
+  --hover-color: rgb(3, 253, 253);
+  --border-color: rgb(255, 255, 255);
 }
 
 a {

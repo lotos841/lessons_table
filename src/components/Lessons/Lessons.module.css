@@ -2,7 +2,7 @@
     background-color: var(--main-bg-color);
     max-width: 420px;
     padding: 15px;
-    border: 4px solid rgb(255, 255, 255);
+    border: 4px solid var(--border-color);
     border-radius: 10px;
     margin: 20px auto 0px auto;
     display: flex;
