@@ -84,9 +84,6 @@ const Lessons = (props) => {
             {isSplit: true, one_group_name: "мдк02", two_group_name: "мдк02",one_group_office:"",two_group_office:"", time: "14:05-14:50"},
             {isSplit: true, one_group_name: "мдк02", two_group_name: "мдк02",one_group_office:"",two_group_office:"", time: "14:55-15:40"},
         ],
-        voscr_data: [
-            {name: "а отдыхать кто будет?", office: "😀", time: "😴"},
-        ]
     }
 
     let [week_day_lessons, setWeek_day_lessons] = useState(lessons_data.monday_data)
@@ -101,7 +98,6 @@ const Lessons = (props) => {
                 <button href="" onClick={() => {setWeek_day_lessons(lessons_data.Thursday_data); setWeek_day("Четверг")}}>Чт</button>
                 <button href="" onClick={() => {setWeek_day_lessons(lessons_data.Friday_data); setWeek_day("Пятница")}}>Пт</button>
                 <button href="" onClick={() => {setWeek_day_lessons(lessons_data.Saturday_data); setWeek_day("Суббота")}}>Сб</button>
-                <button href="" onClick={() => {setWeek_day_lessons(lessons_data.voscr_data); setWeek_day("Воскресенье")}}>Вс</button>
             </div>
             <Lessons_list week_day_lessonss={week_day_lessons} week_day={week_day}/>
         </div>
