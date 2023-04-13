@@ -22,8 +22,6 @@
 }
 
 .lesson_time {
-    border: 4px solid var(--border-color);
-    border-radius: 10px;
     padding: 5px;
     font-size: 12px;
 }
@@ -55,7 +53,6 @@
 }
 
 .lesson_time_split{
-    border: 4px solid var(--border-color);
     border-radius: 10px;
     font-size: 16px;
 
@@ -102,12 +99,10 @@
     }
     .lesson_time {
         padding: 5px;
-        border-radius: 10px;
         font-size: 10px;
     }
 
     .lesson_time_split{
-        border-radius: 10px;
         font-size: 12px;
         padding: 5px;
     }
@@ -119,18 +114,15 @@
     }
 
     .lesson_office {
-        border-radius: 10px;
         font-size: 10px;
         padding: 5px;
     }
     .lesson_time {
         padding: 5px;
-        border-radius: 10px;
         font-size: 10px;
     }
 
     .lesson_time_split{
-        border-radius: 10px;
         font-size: 10px;
         padding: 5px;
     }
@@ -143,18 +135,15 @@
 
     .lesson_time_split {
         padding: 5px;
-        border-radius: 10px;
         font-size: 10px;
     }
 
     .lesson_time {
         padding: 5px;
-        border-radius: 10px;
         font-size: 10px;
     }
 
     .lesson_office {
-        border-radius: 10px;
         font-size: 12px;
         padding: 5px;
     }
